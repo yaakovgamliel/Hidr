@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D779DD531A86B103006739A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DD521A86B103006739A6 /* AppDelegate.m */; };
+		D779DD551A86B103006739A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DD541A86B103006739A6 /* main.m */; };
+		D779DD571A86B103006739A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D779DD561A86B103006739A6 /* Images.xcassets */; };
+		D779DD5A1A86B103006739A6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D779DD581A86B103006739A6 /* MainMenu.xib */; };
+		D779DD661A86B103006739A6 /* HidrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DD651A86B103006739A6 /* HidrTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D779DD601A86B103006739A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D779DD441A86B103006739A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D779DD4B1A86B103006739A6;
+			remoteInfo = Hidr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D779DD4C1A86B103006739A6 /* Hidr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hidr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D779DD501A86B103006739A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D779DD511A86B103006739A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D779DD521A86B103006739A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D779DD541A86B103006739A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D779DD561A86B103006739A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D779DD591A86B103006739A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D779DD5F1A86B103006739A6 /* HidrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HidrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D779DD641A86B103006739A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D779DD651A86B103006739A6 /* HidrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HidrTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D779DD491A86B103006739A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D779DD5C1A86B103006739A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D779DD431A86B103006739A6 = {
+			isa = PBXGroup;
+			children = (
+				D779DD4E1A86B103006739A6 /* Hidr */,
+				D779DD621A86B103006739A6 /* HidrTests */,
+				D779DD4D1A86B103006739A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D779DD4D1A86B103006739A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D779DD4C1A86B103006739A6 /* Hidr.app */,
+				D779DD5F1A86B103006739A6 /* HidrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D779DD4E1A86B103006739A6 /* Hidr */ = {
+			isa = PBXGroup;
+			children = (
+				D779DD511A86B103006739A6 /* AppDelegate.h */,
+				D779DD521A86B103006739A6 /* AppDelegate.m */,
+				D779DD581A86B103006739A6 /* MainMenu.xib */,
+				D779DD561A86B103006739A6 /* Images.xcassets */,
+				D779DD4F1A86B103006739A6 /* Supporting Files */,
+			);
+			path = Hidr;
+			sourceTree = "<group>";
+		};
+		D779DD4F1A86B103006739A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D779DD501A86B103006739A6 /* Info.plist */,
+				D779DD541A86B103006739A6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D779DD621A86B103006739A6 /* HidrTests */ = {
+			isa = PBXGroup;
+			children = (
+				D779DD651A86B103006739A6 /* HidrTests.m */,
+				D779DD631A86B103006739A6 /* Supporting Files */,
+			);
+			path = HidrTests;
+			sourceTree = "<group>";
+		};
+		D779DD631A86B103006739A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D779DD641A86B103006739A6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D779DD4B1A86B103006739A6 /* Hidr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D779DD691A86B103006739A6 /* Build configuration list for PBXNativeTarget "Hidr" */;
+			buildPhases = (
+				D779DD481A86B103006739A6 /* Sources */,
+				D779DD491A86B103006739A6 /* Frameworks */,
+				D779DD4A1A86B103006739A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hidr;
+			productName = Hidr;
+			productReference = D779DD4C1A86B103006739A6 /* Hidr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D779DD5E1A86B103006739A6 /* HidrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D779DD6C1A86B103006739A6 /* Build configuration list for PBXNativeTarget "HidrTests" */;
+			buildPhases = (
+				D779DD5B1A86B103006739A6 /* Sources */,
+				D779DD5C1A86B103006739A6 /* Frameworks */,
+				D779DD5D1A86B103006739A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D779DD611A86B103006739A6 /* PBXTargetDependency */,
+			);
+			name = HidrTests;
+			productName = HidrTests;
+			productReference = D779DD5F1A86B103006739A6 /* HidrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D779DD441A86B103006739A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = G2Think;
+				TargetAttributes = {
+					D779DD4B1A86B103006739A6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D779DD5E1A86B103006739A6 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D779DD4B1A86B103006739A6;
+					};
+				};
+			};
+			buildConfigurationList = D779DD471A86B103006739A6 /* Build configuration list for PBXProject "Hidr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D779DD431A86B103006739A6;
+			productRefGroup = D779DD4D1A86B103006739A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D779DD4B1A86B103006739A6 /* Hidr */,
+				D779DD5E1A86B103006739A6 /* HidrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D779DD4A1A86B103006739A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779DD571A86B103006739A6 /* Images.xcassets in Resources */,
+				D779DD5A1A86B103006739A6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D779DD5D1A86B103006739A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D779DD481A86B103006739A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779DD551A86B103006739A6 /* main.m in Sources */,
+				D779DD531A86B103006739A6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D779DD5B1A86B103006739A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779DD661A86B103006739A6 /* HidrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D779DD611A86B103006739A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D779DD4B1A86B103006739A6 /* Hidr */;
+			targetProxy = D779DD601A86B103006739A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D779DD581A86B103006739A6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D779DD591A86B103006739A6 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D779DD671A86B103006739A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D779DD681A86B103006739A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D779DD6A1A86B103006739A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Hidr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D779DD6B1A86B103006739A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Hidr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D779DD6D1A86B103006739A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HidrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hidr.app/Contents/MacOS/Hidr";
+			};
+			name = Debug;
+		};
+		D779DD6E1A86B103006739A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HidrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hidr.app/Contents/MacOS/Hidr";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D779DD471A86B103006739A6 /* Build configuration list for PBXProject "Hidr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D779DD671A86B103006739A6 /* Debug */,
+				D779DD681A86B103006739A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D779DD691A86B103006739A6 /* Build configuration list for PBXNativeTarget "Hidr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D779DD6A1A86B103006739A6 /* Debug */,
+				D779DD6B1A86B103006739A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D779DD6C1A86B103006739A6 /* Build configuration list for PBXNativeTarget "HidrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D779DD6D1A86B103006739A6 /* Debug */,
+				D779DD6E1A86B103006739A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D779DD441A86B103006739A6 /* Project object */;
+}
