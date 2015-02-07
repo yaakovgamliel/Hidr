@@ -1,0 +1,17 @@
+
+# Xcode
+.DS_Store
+*/build/*
+*.pbxuser
+
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+*.bak
+.irb-history
+*.swp
+
+*.xccheckout
+
+*.xcuserstate
