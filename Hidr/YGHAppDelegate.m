@@ -5,10 +5,22 @@
 //  Created by Yaakov Gamliel on 2/7/15.
 //  Copyright (c) 2015 G2Think. All rights reserved.
 //
+//      ___                       ___           ___
+//     /\__\          ___        /\  \         /\  \
+//    /:/  /         /\  \      /::\  \       /::\  \
+//   /:/__/          \:\  \    /:/\:\  \     /:/\:\  \
+//  /::\  \ ___      /::\__\  /:/  \:\__\   /::\~\:\  \
+// /:/\:\  /\__\  __/:/\/__/ /:/__/ \:|__| /:/\:\ \:\__\
+// \/__\:\/:/  / /\/:/  /    \:\  \ /:/  / \/_|::\/:/  /
+//      \::/  /  \::/__/      \:\  /:/  /     |:|::/  /
+//      /:/  /    \:\__\       \:\/:/  /      |:|\/__/
+//     /:/  /      \/__/        \::/__/       |:|  |
+//    \/__/                     ~~            \|__|
+//
 
-#import "AppDelegate.h"
+#import "YGHAppDelegate.h"
 
-@interface AppDelegate ()
+@interface YGHAppDelegate ()
 
 @property (strong, nonatomic) NSStatusItem *statusItem;
 @property (assign, nonatomic) BOOL darkModeOn;
@@ -16,7 +28,7 @@
 
 @end
 
-@implementation AppDelegate
+@implementation YGHAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     

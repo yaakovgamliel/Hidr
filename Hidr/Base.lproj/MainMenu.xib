@@ -11,7 +11,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+        <customObject id="Voe-Tx-rLC" customClass="YGHAppDelegate">
             <connections>
                 <outlet property="appMenu" destination="mME-9D-cxd" id="T1N-Ea-fjy"/>
             </connections>
