@@ -33,7 +33,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    _statusItem.image = [NSImage imageNamed:@"menuBarIcon"];
+    _statusItem.image = [NSImage imageNamed:@"menuBarIconSelected"];
     [self.statusItem setMenu:self.appMenu];
     
 }
@@ -42,6 +42,7 @@
     if ([self isDesktopHidden]) {
         [self showdesktopItems];
         [self restarFinder];
+        self.statusItem.image = [NSImage imageNamed:@"menuBarIconSelected"];
     }
 }
 
@@ -49,6 +50,7 @@
     if (![self isDesktopHidden]) {
         [self hideDesktopItems];
         [self restarFinder];
+        self.statusItem.image = [NSImage imageNamed:@"menuBarIcon"];
     }
 }
 
