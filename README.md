@@ -9,6 +9,5 @@ Download the app from the [release](https://github.com/yaakovgamliel/Hidr/releas
 
 ## ToDo
 1. Add start at login
-2. A nice menu bar icon the current one it is just temporal
 
 
