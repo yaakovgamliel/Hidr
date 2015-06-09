@@ -33,7 +33,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    _statusItem.image = [NSImage imageNamed:@"menuBarIconSelected"];
+    
+    _statusItem.image = [self imageForCurrentItemsState];
+    
     [self.statusItem setMenu:self.appMenu];
     
 }
@@ -104,6 +106,15 @@
     
     [restartFinder launch];
     [restartFinder waitUntilExit];
+}
+
+- (NSImage *)imageForCurrentItemsState
+{
+    if ([self isDesktopHidden]) {
+        return [NSImage imageNamed:@"menuBarIconSelected"];
+    } else {
+        return [NSImage imageNamed:@"menuBarIcon"];
+    }
 }
 
 @end
