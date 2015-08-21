@@ -19,6 +19,7 @@
 //
 
 #import "YGHAppDelegate.h"
+#import "PFMoveApplication.h"
 
 @interface YGHAppDelegate ()
 
@@ -58,6 +59,10 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+}
+
+- (void)applicationWillFinishLaunching:(NSNotification *)notification {
+    PFMoveToApplicationsFolderIfNecessary();
 }
 
 - (BOOL)isDesktopHidden {

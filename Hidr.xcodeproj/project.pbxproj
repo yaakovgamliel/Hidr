@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72AEADE1B871A4F00F0783A /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D72AEADD1B871A4F00F0783A /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D779DD531A86B103006739A6 /* YGHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DD521A86B103006739A6 /* YGHAppDelegate.m */; };
 		D779DD551A86B103006739A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DD541A86B103006739A6 /* main.m */; };
 		D779DD571A86B103006739A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D779DD561A86B103006739A6 /* Images.xcassets */; };
@@ -25,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D72AEADC1B871A4800F0783A /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		D72AEADD1B871A4F00F0783A /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 		D779DD4C1A86B103006739A6 /* Hidr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hidr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D779DD501A86B103006739A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D779DD511A86B103006739A6 /* YGHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGHAppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 				D7FAA9DC1A8AB8E400023E36 /* Hidr.entitlements */,
 				D779DD511A86B103006739A6 /* YGHAppDelegate.h */,
 				D779DD521A86B103006739A6 /* YGHAppDelegate.m */,
+				D72AEADC1B871A4800F0783A /* PFMoveApplication.h */,
+				D72AEADD1B871A4F00F0783A /* PFMoveApplication.m */,
 				D779DD581A86B103006739A6 /* MainMenu.xib */,
 				D779DD561A86B103006739A6 /* Images.xcassets */,
 				D779DD4F1A86B103006739A6 /* Supporting Files */,
@@ -220,6 +225,7 @@
 			files = (
 				D779DD551A86B103006739A6 /* main.m in Sources */,
 				D779DD531A86B103006739A6 /* YGHAppDelegate.m in Sources */,
+				D72AEADE1B871A4F00F0783A /* PFMoveApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
