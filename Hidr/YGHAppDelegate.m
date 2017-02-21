@@ -20,12 +20,14 @@
 
 #import "YGHAppDelegate.h"
 #import "PFMoveApplication.h"
+#import "YGHDefaultsManager.h"
 
 @interface YGHAppDelegate ()
 
 @property (strong, nonatomic) NSStatusItem *statusItem;
 @property (assign, nonatomic) BOOL darkModeOn;
 @property (weak) IBOutlet NSMenu *appMenu;
+@property (strong) YGHDefaultsManager *defaultsManager;
 
 @end
 
@@ -35,87 +37,32 @@
     
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     
-    _statusItem.image = [self imageForCurrentItemsState];
+    self.defaultsManager = [[YGHDefaultsManager alloc] init];
+    
+    self.statusItem.image = [self.defaultsManager menuImageForCurrentDesktopState:![self.defaultsManager isDesktopHidden]];
     
     [self.statusItem setMenu:self.appMenu];
     
 }
 
 - (IBAction)showItemClicked:(id)sender {
-    if ([self isDesktopHidden]) {
-        [self showdesktopItems];
-        [self restarFinder];
-        self.statusItem.image = [NSImage imageNamed:@"menuBarIconSelected"];
+    if ([self.defaultsManager isDesktopHidden]) {
+        [self.defaultsManager showdesktopItems];
+        [self.defaultsManager restarFinder];
+        self.statusItem.image = [self.defaultsManager menuImageForCurrentDesktopState:YES];
     }
 }
 
 - (IBAction)hideItemClicked:(id)sender {
-    if (![self isDesktopHidden]) {
-        [self hideDesktopItems];
-        [self restarFinder];
-        self.statusItem.image = [NSImage imageNamed:@"menuBarIcon"];
+    if (![self.defaultsManager isDesktopHidden]) {
+        [self.defaultsManager hideDesktopItems];
+        [self.defaultsManager restarFinder];
+        self.statusItem.image = [self.defaultsManager menuImageForCurrentDesktopState:NO];
     }
 }
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification {
     PFMoveToApplicationsFolderIfNecessary();
-}
-
-- (BOOL)isDesktopHidden {
-    NSTask *hideTask = [[NSTask alloc] init];
-    hideTask.launchPath = @"/usr/bin/defaults";
-    hideTask.arguments = @[@"read",@"com.apple.finder",@"CreateDesktop"];
-    
-    NSPipe *hideTaskPipe = [[NSPipe alloc] init];
-    
-    hideTask.standardOutput = hideTaskPipe;
-    
-    [hideTask launch];
-    
-    NSString *taskOutput = [[NSString alloc] initWithData:[[hideTaskPipe fileHandleForReading] readDataToEndOfFile] encoding:NSUTF8StringEncoding];
-    [hideTask waitUntilExit];
-    
-    if ([taskOutput isEqualToString:@"flase\n"]) {
-        return YES;
-    } else {
-        return NO;
-    }
-}
-
-- (void)hideDesktopItems {
-    NSTask *hideTask = [[NSTask alloc] init];
-    hideTask.launchPath = @"/usr/bin/defaults";
-    hideTask.arguments = @[@"write",@"com.apple.finder",@"CreateDesktop",@"flase"];
-    
-    [hideTask launch];
-    [hideTask waitUntilExit];
-}
-
-- (void)showdesktopItems {
-    NSTask *showTask = [[NSTask alloc] init];
-    showTask.launchPath = @"/usr/bin/defaults";
-    showTask.arguments = @[@"write",@"com.apple.finder",@"CreateDesktop",@"true"];
-    
-    [showTask launch];
-    [showTask waitUntilExit];
-}
-
-- (void)restarFinder {
-    NSTask *restartFinder = [[NSTask alloc] init];
-    restartFinder.launchPath = @"/usr/bin/killall";
-    restartFinder.arguments = @[@"Finder"];
-    
-    [restartFinder launch];
-    [restartFinder waitUntilExit];
-}
-
-- (NSImage *)imageForCurrentItemsState
-{
-    if ([self isDesktopHidden]) {
-        return [NSImage imageNamed:@"menuBarIconSelected"];
-    } else {
-        return [NSImage imageNamed:@"menuBarIcon"];
-    }
 }
 
 @end
