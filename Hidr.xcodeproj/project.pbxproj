@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D72AEADE1B871A4F00F0783A /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D72AEADD1B871A4F00F0783A /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D7463BBB1E5C3510003AD1BA /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D7463BBA1E5C3510003AD1BA /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D7463BC31E5C3609003AD1BA /* YGHDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7463BC21E5C3609003AD1BA /* YGHDefaultsManager.m */; };
 		D779DD531A86B103006739A6 /* YGHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DD521A86B103006739A6 /* YGHAppDelegate.m */; };
 		D779DD551A86B103006739A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DD541A86B103006739A6 /* main.m */; };
 		D779DD571A86B103006739A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D779DD561A86B103006739A6 /* Images.xcassets */; };
@@ -26,8 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D72AEADC1B871A4800F0783A /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
-		D72AEADD1B871A4F00F0783A /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
+		D7463BB91E5C3510003AD1BA /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		D7463BBA1E5C3510003AD1BA /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
+		D7463BC11E5C3609003AD1BA /* YGHDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGHDefaultsManager.h; sourceTree = "<group>"; };
+		D7463BC21E5C3609003AD1BA /* YGHDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGHDefaultsManager.m; sourceTree = "<group>"; };
 		D779DD4C1A86B103006739A6 /* Hidr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hidr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D779DD501A86B103006739A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D779DD511A86B103006739A6 /* YGHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGHAppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7463BB81E5C34D2003AD1BA /* PFMoveApplication */ = {
+			isa = PBXGroup;
+			children = (
+				D7463BB91E5C3510003AD1BA /* PFMoveApplication.h */,
+				D7463BBA1E5C3510003AD1BA /* PFMoveApplication.m */,
+			);
+			path = PFMoveApplication;
+			sourceTree = "<group>";
+		};
+		D7463BC01E5C35D9003AD1BA /* YGHDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				D7463BC11E5C3609003AD1BA /* YGHDefaultsManager.h */,
+				D7463BC21E5C3609003AD1BA /* YGHDefaultsManager.m */,
+			);
+			path = YGHDefaultsManager;
+			sourceTree = "<group>";
+		};
 		D779DD431A86B103006739A6 = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +101,11 @@
 		D779DD4E1A86B103006739A6 /* Hidr */ = {
 			isa = PBXGroup;
 			children = (
+				D7463BC01E5C35D9003AD1BA /* YGHDefaultsManager */,
+				D7463BB81E5C34D2003AD1BA /* PFMoveApplication */,
 				D7FAA9DC1A8AB8E400023E36 /* Hidr.entitlements */,
 				D779DD511A86B103006739A6 /* YGHAppDelegate.h */,
 				D779DD521A86B103006739A6 /* YGHAppDelegate.m */,
-				D72AEADC1B871A4800F0783A /* PFMoveApplication.h */,
-				D72AEADD1B871A4F00F0783A /* PFMoveApplication.m */,
 				D779DD581A86B103006739A6 /* MainMenu.xib */,
 				D779DD561A86B103006739A6 /* Images.xcassets */,
 				D779DD4F1A86B103006739A6 /* Supporting Files */,
@@ -162,7 +183,7 @@
 		D779DD441A86B103006739A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = G2Think;
 				TargetAttributes = {
 					D779DD4B1A86B103006739A6 = {
@@ -225,7 +246,8 @@
 			files = (
 				D779DD551A86B103006739A6 /* main.m in Sources */,
 				D779DD531A86B103006739A6 /* YGHAppDelegate.m in Sources */,
-				D72AEADE1B871A4F00F0783A /* PFMoveApplication.m in Sources */,
+				D7463BC31E5C3609003AD1BA /* YGHDefaultsManager.m in Sources */,
+				D7463BBB1E5C3510003AD1BA /* PFMoveApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +294,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -313,8 +339,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -323,6 +351,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -343,6 +372,7 @@
 				INFOPLIST_FILE = Hidr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.g2think.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -355,6 +385,7 @@
 				INFOPLIST_FILE = Hidr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.g2think.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -374,6 +405,7 @@
 				);
 				INFOPLIST_FILE = HidrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.g2think.hidr.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hidr.app/Contents/MacOS/Hidr";
 			};
@@ -390,6 +422,7 @@
 				);
 				INFOPLIST_FILE = HidrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.g2think.hidr.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hidr.app/Contents/MacOS/Hidr";
 			};
